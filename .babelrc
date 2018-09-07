@@ -1,0 +1,14 @@
+{
+	"plugins": [
+		[
+			"babel-plugin-root-import",
+			{
+				"rootPathPrefix": "~"
+			}
+		]
+	],
+	"presets": [
+		"next/babel",
+		"@zeit/next-typescript/babel"
+	]
+}
