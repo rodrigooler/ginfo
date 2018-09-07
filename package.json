@@ -37,6 +37,12 @@
     ]
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "next build",
+    "dev": "next dev",
+    "format": "prettier --write '{.,__tests__,components/**,pages/**}/*.{js,jsx,ts,tsx}'",
+    "lint": "tslint -p .",
+    "precommit": "lint-staged",
+    "prepull": "npm install",
+    "start": "next start"
   }
 }
