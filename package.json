@@ -2,7 +2,40 @@
   "name": "ginfo",
   "version": "0.0.1",
   "author": "Rodrigo Oler <https://oler.now.sh>",
+  "dependencies": {
+    "@zeit/next-typescript": "1.1.0",
+    "idx": "2.4.0",
+    "next": "7.0.0-canary.13",
+    "prop-types": "15.6.2",
+    "react": "16.5.0",
+    "react-dom": "16.5.0",
+    "styled-components": "3.4.5"
+  },
+  "devDependencies": {
+    "@types/next": "6.1.4",
+    "@types/prop-types": "15.5.5",
+    "@types/react": "16.4.13",
+    "babel-core": "6.26.3",
+    "babel-plugin-root-import": "^6.1.0",
+    "husky": "0.14.3",
+    "lint-staged": "7.2.2",
+    "prettier": "1.14.2",
+    "tslint": "5.11.0",
+    "tslint-config-prettier": "1.15.0",
+    "typescript": "3.0.3"
+  },
+  "engines": {
+    "node": "10.8.0",
+    "npm": "6.4.0"
+  },
   "license": "MIT",
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "tslint --fix",
+      "git add"
+    ]
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   }
