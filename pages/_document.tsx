@@ -52,7 +52,7 @@ export default class MainDocument extends Document {
                     <meta name="apple-mobile-web-app-capable" content="yes" />
                     <meta
                         name="apple-mobile-web-app-status-bar-style"
-                        content={COLOR.PURPLE_HEART}
+                        content=""
                     />
                     <meta name="keywords" content="" />
                     <meta property="og:url" content="https://ginfo.now.sh" />
@@ -60,7 +60,7 @@ export default class MainDocument extends Document {
                     <meta property="og:description" content="" />
                     <meta property="og:image:secure_url" content="" />
                     <meta name="description" content="" />
-                    <meta name="theme-color" content={COLOR.PURPLE_HEART} />
+                    <meta name="theme-color" content="" />
                     <meta name="twitter:card" content="summary" />
                     <meta name="twitter:site" content="@goinfo" />
                     <meta name="twitter:creator" content="@goinfo" />
