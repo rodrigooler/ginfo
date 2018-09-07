@@ -1,6 +1,6 @@
+import Document, { Head, Main, NextScript } from 'next/document'
 import React from 'react'
 import { injectGlobal, ServerStyleSheet } from 'styled-components'
-import Document, { Head, Main, NextScript } from 'next/document'
 
 // @ts-ignore
 injectGlobal`
@@ -8,13 +8,13 @@ injectGlobal`
 	body,
 	#root {
 		position: relative;
-		background-color: #333
+		background-color: #000
 		width: 100%;
 		height: 100%;
 		margin: 0;
 		padding: 0;
-		font-family: "Raleway", "Roboto", sans-serif;
-    overflow-x: hidden;
+		font-family: "Raleway", sans-serif;
+        overflow-x: hidden;
 		font-size: 16px;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
