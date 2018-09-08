@@ -22,19 +22,13 @@ export default () => {
                 Livros
             </Text>
             <Separator horizontal={10} />
-            <a href="../../files/ebooks/masteringnode.pdf" download>
-                <Text isCenter>TJ Holowaychuk | MasteringNode</Text>
-            </a>
             <a
-                href="../../files/ebooks/nodebots-javascript-and-robotic-in-the-real-world.pdf"
+                href="http://github.com/visionmedia/masteringnode/raw/master/book.pdf"
                 download
             >
-                <Text isCenter>
-                    Will Mendes | Nodebots - Javascript and robotics in the real
-                    world
-                </Text>
+                <Text isCenter>TJ Holowaychuk | MasteringNode</Text>
             </a>
-            <a href="../../files/ebooks/thenodejsclustermodule.pdf" download>
+            <a href="https://leanpub.com/s/v68RxH_JYbgsUpPE7q4-eg.pdf" download>
                 <Text isCenter>
                     Antonio Santiago - The NodeJS Cluster Module
                 </Text>
