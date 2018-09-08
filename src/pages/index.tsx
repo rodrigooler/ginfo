@@ -3,7 +3,7 @@ import Separator from '../atoms/Separator'
 import Text from '../atoms/Text'
 
 const Wrapper = styled.div`
-    padding: 30px;
+    padding: 10% 30px;
 `
 
 export default () => {
@@ -14,10 +14,31 @@ export default () => {
             </Text>
             <Separator horizontal={20} />
             <Text isCenter size={14}>
-                Site está em construção e terá disponivel vários ebooks open
-                sources e free para pessoas que estão em paises que é díficil
-                ter acesso a internet.
+                Site está em construção, irá ter disponivel vários ebooks open
+                source e free.
             </Text>
+            <Separator horizontal={20} />
+            <Text isCenter size={32}>
+                Livros
+            </Text>
+            <Separator horizontal={10} />
+            <a href="../../files/ebooks/masteringnode.pdf" download>
+                <Text isCenter>TJ Holowaychuk | MasteringNode</Text>
+            </a>
+            <a
+                href="../../files/ebooks/nodebots-javascript-and-robotic-in-the-real-world.pdf"
+                download
+            >
+                <Text isCenter>
+                    Will Mendes | Nodebots - Javascript and robotics in the real
+                    world
+                </Text>
+            </a>
+            <a href="../../files/ebooks/thenodejsclustermodule.pdf" download>
+                <Text isCenter>
+                    Antonio Santiago - The NodeJS Cluster Module
+                </Text>
+            </a>
         </Wrapper>
     )
 }
