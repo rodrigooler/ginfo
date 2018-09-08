@@ -1,5 +1,3 @@
-_**GINFO** —_
-
 ## Features
 
 * **Easy**: Easy book download free
