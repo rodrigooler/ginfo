@@ -9,6 +9,7 @@
     "prop-types": "15.6.2",
     "react": "16.5.0",
     "react-dom": "16.5.0",
+    "reworm": "^1.0.4",
     "styled-components": "3.4.5"
   },
   "devDependencies": {
@@ -37,12 +38,12 @@
     ]
   },
   "scripts": {
-    "build": "next build",
-    "dev": "next dev",
+    "build": "next build src",
+    "dev": "next dev src",
     "format": "prettier --write '{.,__tests__,components/**,pages/**}/*.{js,jsx,ts,tsx}'",
     "lint": "tslint -p .",
     "precommit": "lint-staged",
     "prepull": "npm install",
-    "start": "next start"
+    "start": "next start src"
   }
 }

@@ -1,31 +1,36 @@
 import Document, { Head, Main, NextScript } from 'next/document'
 import React from 'react'
-import { ServerStyleSheet } from 'styled-components'
+import {
+    injectGlobal,
+    ServerStyleSheet,
+    ThemeProvider,
+} from 'styled-components'
+import { theme } from '../atoms/Theme'
 
-// // @ts-ignore
-// injectGlobal`
-// 	html,
-// 	body,
-// 	#root {
-// 		position: relative;
-// 		background-color: #000
-// 		width: 100%;
-// 		height: 100%;
-// 		margin: 0;
-// 		padding: 0;
-// 		font-family: "Raleway", sans-serif;
-//         overflow-x: hidden;
-// 		font-size: 16px;
-// 		-webkit-font-smoothing: antialiased;
-// 		-moz-osx-font-smoothing: grayscale;
-// 	},
-// 	*,
-// 	*::before,
-// 	*::after {
-// 		box-sizing: border-box;
-// 		outline: none;
-// 	}
-// `
+injectGlobal`
+	html,
+	body,
+	#root {
+		position: relative;
+		background-color: #000
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		font-family: "Emblema-55", sans-serif;
+        src: url("../static/fonts/Emblema-55.otf") format("opentype");
+        overflow-x: hidden;
+		font-size: 16px;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	},
+	*,
+	*::before,
+	*::after {
+		box-sizing: border-box;
+		outline: none;
+	}
+`
 
 export default class MainDocument extends Document {
     public static getInitialProps({ renderPage }: any): any {
@@ -81,24 +86,15 @@ export default class MainDocument extends Document {
                             href="/static/favicon-32.ico"
                             sizes="32x32"
                         />
-                        <link
-                            href="https://fonts.googleapis.com/css?family=Raleway:400,700"
-                            rel="stylesheet"
-                        />
                         {this.props.styleTags}
                     </Head>
                     <body>
-                        <Main />
+                        <ThemeProvider theme={theme}>
+                            <Main />
+                        </ThemeProvider>
                         <NextScript />
                     </body>
                 </html>
-                {/* <style jsx global>{`
-                    body {
-                        background: #000;
-                        font: 11px menlo;
-                        color: #fff;
-                    }
-                `}</style> */}
             </>
         )
     }
