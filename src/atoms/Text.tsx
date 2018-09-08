@@ -9,7 +9,9 @@ interface ITextProps {
 
 const Text = styled<ITextProps, 'p'>('p')`
     ${({ theme, isBold, size }) => css`
-        color: ${theme.fontColor};
+        /* color: ${theme.fontColor}; */
+        color: #FFF;
+        margin: 0px;
         font-weight: ${isBold ? 'bold' : null};
         font-size: ${size + 'px'};
     `};
