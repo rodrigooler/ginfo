@@ -1,10 +1,8 @@
-import styled, { css, withTheme } from 'styled-components'
-import { IThemeProps } from './Theme'
+import styled, { css } from 'styled-components'
 
 interface ITextProps {
     isBold?: boolean
     size?: number
-    theme: IThemeProps
 }
 
 const Text = styled<ITextProps, 'p'>('p')`
